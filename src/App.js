@@ -3,6 +3,7 @@ import { Provider } from "react-redux";
 import { BrowserRouter, Route } from "react-router-dom";
 import { PersistGate } from "redux-persist/integration/react";
 import Home from "./pages/Home";
+import Login from "./pages/Login";
 import { persistor, store } from "./store/reducers";
 function App() {
   return (
@@ -12,8 +13,9 @@ function App() {
           <div className="App">
             <Route path="/" exact component={Home} />
             <Route path="/dashboard" component={() => <h1>dashboard</h1>} />
-            <Route path="/login" component={() => <h1>login</h1>} />
+            <Route path="/login" component={Login} />
             <Route path="/register" component={() => <h1>register</h1>} />
+            <Route path="/forgot-password" component={() => <h1>Esqueci minha senha</h1>} />
             <Route
               path="/search-project"
               component={() => <h1>search Project</h1>}
