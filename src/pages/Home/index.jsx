@@ -19,10 +19,10 @@ const Home = () => {
           <div className="row justify-content-between">
             <div className="col-12 col-md d-flex align-items-center">
               <p className="mb-0 phone">
-                <span className="mailus">Phone no:</span>{" "}
-                <a href="#">+00 1234 567</a> or{" "}
-                <span className="mailus">email us:</span>{" "}
-                <a href="#">emailsample@email.com</a>
+                <span className="mailus">
+                  Devido ao cenário atual referente o COVID-19, muitos projetos
+                  e ações foram suspensas.
+                </span>
               </p>
             </div>
             <div className="col-12 col-md d-flex justify-content-md-end">
@@ -40,24 +40,8 @@ const Home = () => {
                     href="#"
                     className="d-flex align-items-center justify-content-center"
                   >
-                    <span className="fa fa-twitter">
-                      <i className="sr-only">Twitter</i>
-                    </span>
-                  </a>
-                  <a
-                    href="#"
-                    className="d-flex align-items-center justify-content-center"
-                  >
                     <span className="fa fa-instagram">
                       <i className="sr-only">Instagram</i>
-                    </span>
-                  </a>
-                  <a
-                    href="#"
-                    className="d-flex align-items-center justify-content-center"
-                  >
-                    <span className="fa fa-dribbble">
-                      <i className="sr-only">Dribbble</i>
                     </span>
                   </a>
                 </p>
@@ -65,7 +49,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div>{" "}
       <nav
         className="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
         id="ftco-navbar"
@@ -118,7 +102,7 @@ const Home = () => {
         className="hero-wrap js-fullheight"
         style={{
           backgroundImage: 'url("https://source.unsplash.com/random")',
-          height: 766,
+          height: 946,
           width: "100%",
         }}
         data-stellar-background-ratio="0.5"
@@ -126,7 +110,7 @@ const Home = () => {
         <div className="overlay" />
         <div className="container">
           <div className="slider-text align-items-center">
-            <div style={{ paddingTop: "17%" }} className="col-md-6 ">
+            <div style={{ paddingTop: "27%" }} className="col-md-6 ">
               <h2 className="subheading ">Lorem Ipsum is simply dummy text</h2>
               <h1 className="mb-4">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -435,7 +419,9 @@ const Home = () => {
                   <div className="d-flex align-items-center mb-4">
                     <div
                       className="user-img"
-                      style={{ backgroundImage: "url(../../assets/img/person_2.jpg)" }}
+                      style={{
+                        backgroundImage: "url(../../assets/img/person_2.jpg)",
+                      }}
                     />
                     <div className="pl-3">
                       <p className="name">André Luiz</p>
@@ -472,7 +458,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
       <footer className="footer ftco-section">
         <div className="container">
           <div className="row mt-12">
