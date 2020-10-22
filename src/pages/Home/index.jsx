@@ -102,8 +102,10 @@ const Home = () => {
         className="hero-wrap js-fullheight"
         style={{
           backgroundImage: 'url("https://source.unsplash.com/random")',
-          height: 946,
-          width: "100%",
+          height: window.innerHeight,
+          width: window.innerWidth,
+          backgroundSize: "cover",
+          overflow: "hidden",
         }}
         data-stellar-background-ratio="0.5"
       >
