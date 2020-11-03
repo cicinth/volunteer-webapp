@@ -4,6 +4,11 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import "./assets/css/style.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./dashboard/assets/css/animate.min.css";
+import "./dashboard/assets/sass/light-bootstrap-dashboard-react.scss?v=1.3.0";
+import "./dashboard/assets/css/demo.css";
+import "./dashboard/assets/css/pe-icon-7-stroke.css";
 
 ReactDOM.render(
   <React.StrictMode>

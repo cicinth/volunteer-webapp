@@ -4,6 +4,8 @@ import { BrowserRouter, Route } from "react-router-dom";
 import { PersistGate } from "redux-persist/integration/react";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
+import DashboardAdmin from "./dashboard/views/Dashboard";
+
 import Register from "./pages/Register";
 import { persistor, store } from "./store/reducers";
 function App() {
@@ -12,8 +14,8 @@ function App() {
       <PersistGate loading={null} persistor={persistor}>
         <BrowserRouter>
           <div className="App">
-            <Route path="/" exact component={Home} />
-            <Route path="/dashboard" component={() => <h1>dashboard</h1>} />
+            <Route path="/"  component={Home} />
+            <Route exact path="/dashboard" component={DashboardAdmin} />
             <Route path="/login" component={Login} />
             <Route path="/register" component={Register} />
             <Route
