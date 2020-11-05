@@ -55,7 +55,7 @@ const Home = () => {
         id="ftco-navbar"
       >
         <div className="container">
-          <a className="navbar-brand" href="index.html">
+          <a className="navbar-brand" href="/">
             Volunt<span>eer</span>
           </a>
           <button
