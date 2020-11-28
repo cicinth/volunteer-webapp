@@ -55,9 +55,9 @@ const Home = () => {
         id="ftco-navbar"
       >
         <div className="container">
-          <a className="navbar-brand" href="index.html">
+          <Link className="navbar-brand">
             Volunt<span>eer</span>
-          </a>
+            </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -77,7 +77,7 @@ const Home = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/search-project">
+                <Link className="nav-link" to="buscar">
                   <i className="fa fa-search" aria-hidden="true" /> Buscar
                   projeto
                 </Link>
@@ -119,14 +119,11 @@ const Home = () => {
                 industry. Lorem Ips
               </h1>
               <p>
-                <a
-                  href="cadastro.html"
-                  className="btn btn-lg btn-success"
-                  style={{ backgroundColor: "#58A1A2" }}
-                >
+                <Link className="btn btn-lg btn-success" style={{ backgroundColor: "#58A1A2" }} 
+                  to="/register">
                   Divulgar ação ou voluntariar-se
-                  <span className="ion-ios-arrow-forward" />
-                </a>
+                </Link>
+                <span className="ion-ios-arrow-forward" />
               </p>
             </div>
           </div>
