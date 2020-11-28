@@ -1,5 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 import { actionSetVolunterData } from "../../store/actions/volunter";
 
 const Register = () => {
@@ -26,7 +27,7 @@ const Register = () => {
                   style={{ width: window.innerWidth / 5}}
                   className="font-weight-light"
                 >
-                  Novo aqui ?{" "}
+                  Novo aqui?{" "}
                 </h4>
                 <h6 className="font-weight-light">Se registre agora </h6>
                 <form className="pt-3">
@@ -61,7 +62,7 @@ const Register = () => {
                     </div>
                   </div>
                   <div className="form-group">
-                    <label>Você é ?</label>
+                    <label>Você é?</label>
                     <select
                       className="form-control form-control-lg"
                       id="exampleFormControlSelect2"
@@ -88,19 +89,23 @@ const Register = () => {
                     </div>
                   </div>
                   <div className="mt-3">
-                    <a
+                  <a
                       style={{ backgroundColor: "#58a1a2", border: "#58a1a2" }}
                       className="btn btn-block btn-info btn-lg font-weight-medium auth-form-btn"
-                      href="../../index.html"
+                      href=""
+                      onClick={() => alert("CHAMAR FUNCTION REGISTRAR")}
                     >
-                      Registrar
+                      REGISTRAR
                     </a>
                   </div>
                   <div className="text-center mt-4 font-weight-light">
-                    Você ja possui uma conta ?{" "}
-                    <a href="login.html" className="text-primary">
-                      Logar-se
-                    </a>
+                    Você ja possui uma conta?{" "}
+                    <Link
+                      to="/login"
+                      className="text-primary"
+                    >
+                     Logar-se
+                    </Link>
                   </div>
                 </form>
               </div>

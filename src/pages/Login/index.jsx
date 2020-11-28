@@ -75,7 +75,7 @@ const Login = () => {
                   </div>
 
                   <div className="text-center mt-4 font-weight-light">
-                    Não tem conta ?{" "}
+                    Não tem conta?{" "}
                     <Link className="text-primary" to="/register">
                       Registre-se
                     </Link>
